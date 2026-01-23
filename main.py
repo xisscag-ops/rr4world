@@ -96,7 +96,8 @@ def get_comment_choice_keyboard():
         resize_keyboard=True
     )
 
-def get_photo_keyboard(has_photos: bool):buttons = []
+def get_photo_keyboard(has_photos: bool):
+    buttons = []
     if has_photos:
         buttons.append([types.KeyboardButton(text="Готово")])
     return types.ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
